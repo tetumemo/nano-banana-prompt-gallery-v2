@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // 画像クリックイベント（モーダル表示）
         imgContainer.addEventListener('click', () => {
-            modal.style.display = 'block';
+            modal.style.display = 'flex';
             modalImg.src = item.image;
         });
 
@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // ESCキーで閉じる
     document.addEventListener('keydown', function (event) {
-        if (event.key === "Escape" && modal.style.display === "block") {
+        if (event.key === "Escape" && (modal.style.display === "block" || modal.style.display === "flex")) {
             modal.style.display = "none";
         }
     });
