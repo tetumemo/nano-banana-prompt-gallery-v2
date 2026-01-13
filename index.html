@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nano Banana Prompt Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>🍌 Nano Banana Prompt Gallery</h1>
+            <p class="description">Nano Banana Proで使える、厳選されたインフォグラフィックプロンプト集</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div id="gallery-grid" class="gallery-grid">
+                <!-- script.jsによってここにカードが生成されます -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 tetumemo</p>
+        </div>
+    </footer>
+
+    <!-- 画像拡大用モーダル -->
+    <div id="image-modal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
